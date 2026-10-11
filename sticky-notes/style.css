@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+}
+
+.container {
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    min-height: 400px;
+    background-color: #f1f1f1;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'DM Serif Display', cursive;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#notes-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    width: 80%;
+    margin: 0 auto 15px;
+}
+
+.note {
+    position: relative;
+    padding: 25px 15px 10px;
+    min-height: 35px;
+    overflow-wrap: anywhere;
+}
+
+.note p {
+    margin: 5px 0;
+}
+
+.delete-button {
+    position: absolute;
+    font-size: 10px;
+    padding: 2px 5px;
+    top: 5px;
+    right: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e54b3a;
+    color: white;
+    cursor: pointer;
+}
+
+#new-note-container {
+    position: relative;
+    width: 200px;
+    height: 95px;
+    margin: 10px auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#new-note {
+    width: 100%;
+    height: 100%;
+    padding: 12px 12px 30px;
+    box-sizing: border-box;
+    background: #fefec0;
+    border: none;
+    resize: none;
+    font-family: Arial, sans-serif;
+}
+
+#add-note {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: #11ff00;
+    background: #fefec0;
+    border: none;
+    cursor: pointer;
+}
