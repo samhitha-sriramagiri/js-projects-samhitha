@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f7f8fc;
+}
+
+#container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+h1 {
+    margin: 0;
+    padding: 20px;
+    background-color: #3f51b5;
+    color: white;
+    text-align: center;
+}
+
+#searchInput {
+    display: block;
+    width: 95%;
+    margin: 20px;
+}
+
+#inputContainer {
+    padding: 0 20px 20px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    color: #333;
+    font-family: inherit;
+}
+
+#textInput {
+    flex: 2;
+    min-width: 150px;
+}
+
+#dateInput,
+#timeInput {
+    flex: 1;
+    min-width: 120px;
+}
+
+button {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 4px;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+#addTask {
+    background-color: #4caf50;
+    color: white;
+}
+
+#addTask:hover {
+    background-color: #388e3c;
+}
+
+#taskList {
+    padding: 0 20px 20px;
+}
+
+#dueTasks,
+#upcomingTasks {
+    margin-top: 20px;
+}
+
+#dueTasks h2,
+#upcomingTasks h2 {
+    color: #3f51b5;
+}
+
+.todo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.todo h3 {
+    width: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.todo p {
+    flex: 1;
+    margin: 0;
+    color: #0a0000;
+    overflow-wrap: anywhere;
+}
+
+.editBtn {
+    background-color: #ffca28;
+    color: #333;
+}
+
+.editBtn:hover {
+    background-color: #fbc02d;
+}
+
+.deleteBtn {
+    background-color: #f44336;
+    color: white;
+}
+
+.deleteBtn:hover {
+    background-color: #d32f2f;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#dialogBox {
+    position: relative;
+    width: 365px;
+    max-width: 90%;
+    padding: 30px 20px;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#dialogBox p {
+    margin: 0 0 12px;
+    color: #333;
+}
+
+#closeDialog {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    padding: 0;
+    background: none;
+    color: #aaa;
+    font-size: 28px;
+}
+
+#okButton {
+    padding: 8px 20px;
+    background-color: #4caf50;
+    color: white;
+}
+
+#okButton:hover {
+    background-color: #388e3c;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>To Do List</h1>
+        <input id="searchInput" placeholder="Search tasks...">
+        <div id="inputContainer">
+            <form novalidate>
+                <input id="textInput" placeholder="Add your task here" required>
+                <input id="dateInput" type="date" required>
+                <input id="timeInput" type="time" required>
+                <button id="addTask" type="submit">Add Task</button>
+            </form>
+        </div>
+        <div id="taskList">
+            <div id="dueTasks"></div>
+            <div id="upcomingTasks"></div>
+        </div>
+    </div>
+    <div id="overlay">
+        <div id="dialogBox">
+            <button id="closeDialog">X</button>
+            <p>Please fill in all fields.</p>
+            <button id="okButton">OK</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
